@@ -114,3 +114,20 @@ Chapitre 11 : Passer un event d'un composant enfant à un composant parent.
 Chapitre 12 : Exercice.
     En prenant exemple sur item.component, créer un autre component pour 
     le formulaire uniquement itemform.component
+    On crée un nouveau composant itemform.
+    12.1 app.component.html
+        12.1.1 couper coller le formulaire dans itemform.component.html
+        12.1.2 ajouter après les étapes itemform la balise itemform-component défini dans itemform.component.ts
+    12.2 itemform.component.html
+        12.2.1 Coller le formulaire.
+    12.3 itemform.component.ts
+        12.3.1 Création du composant itemformComponent.
+        12.3.2 Création d'un variable newItem.
+        12.3.3 Constructor qui initialise la variable newItem
+        12.3.4 Créer Ouput onCreateObject.
+        12.3.5 créer createObjectItem qui fait un emit et un resetNewItem
+        12.3.6 créer resetNewItem.
+    12.4 app.component.ts
+        12.4.1 supprimer la gestion du newItem
+    12.5 app.module.ts
+        12.5.1 Ajouter la déclaration du nouveau composant.

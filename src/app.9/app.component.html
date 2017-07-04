@@ -1,0 +1,28 @@
+<h1>
+  {{title}}
+</h1>
+<p>
+  {{version}}
+</p>
+
+<!-->9.1.1 add form avec une référence #itemform="ngForm"</!-->
+<form #itemform="ngForm">
+  <!-->9.1.2 add attribut html aux inputs (required, name et minLength)</!-->
+  <input [(ngModel)]="newItem.reference" name="reference" required minlength="4" #ref="ngModel">
+  <!-->9.1.4 add référence #ref sur le première input que l'on a cablé avec ngModel 9.1.5 ajout span avec directive [hidden]="ref.valid
+  || ref.pristine" qui s'affiche si le champ est invalide.</!-->
+  <span [hidden]="ref.valid || ref.pristine"> Champ invalide</span>
+  <input [(ngModel)]=" newItem.name " name="name " required>
+  <input [(ngModel)]="newItem.state " name="state " required>
+  <!-->9.1.3 use [disabled]="!itemform.valid" sur le bouton d"envoie</!-->
+  <button [disabled]="!itemform.valid " (click)='createObject()'>Create Object</button>
+</form>
+<div *ngFor="let item of collection ">
+  <p>Référence : {{item.reference}}</p>
+  <p>Nom : {{item.name}}</p>
+  <p class="state-0 " *ngIf="0==item.state ">A livrer</p>
+  <p class="state-1 " *ngIf="1==item.state ">En cours de livraison</p>
+  <p class="state-2 " *ngIf="2==item.state ">Livrée</p>
+  <button (click)="getDetails($event, 'test') " id="{{item.reference}} ">Détails</button>
+  <hr>
+</div>

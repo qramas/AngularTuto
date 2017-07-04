@@ -1,0 +1,8 @@
+<!-->10.1.1 copier coller de app.component.html après ngFor</!-->
+<p>Référence : {{item.reference}}</p>
+<p>Nom : {{item.name}}</p>
+<p class="state-0" *ngIf="0==item.state ">A livrer</p>
+<p class="state-1" *ngIf="1==item.state ">En cours de livraison</p>
+<p class="state-2" *ngIf="2==item.state ">Livrée</p>
+<button (click)="getDetails($event, 'test')" id="{{item.reference}}">Détails</button>
+<hr>

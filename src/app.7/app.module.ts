@@ -3,13 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <--- JavaScript import from Angular
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { ItemComponent } from './item.component';
-import { ItemFormComponent } from './itemform.component';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    ItemComponent,
-    ItemFormComponent
+    AppComponent
   ],
   imports: [
     HttpModule,

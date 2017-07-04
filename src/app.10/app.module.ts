@@ -4,12 +4,11 @@ import { FormsModule } from '@angular/forms'; // <--- JavaScript import from Ang
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ItemComponent } from './item.component';
-import { ItemFormComponent } from './itemform.component';
+//        10.4.1 ajout de l'import de itemComponent et dans déclaration
 @NgModule({
   declarations: [
     AppComponent,
-    ItemComponent,
-    ItemFormComponent
+    ItemComponent
   ],
   imports: [
     HttpModule,

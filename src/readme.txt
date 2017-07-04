@@ -27,3 +27,19 @@ Chapitre 2 Définir des états sur un objet.
     2.5 item.component.html
         2.5.1 reférencer le trigger dans le div panel-default et on l'a cablé à la
         propriété animateState
+
+Chapitre 3 : animations en entrée et en sortie avec * et void
+    On veut faire une animation quand un item est ajouté puis le faire disparaitre avec une animation
+    après un délai de quelques secondes
+    
+    3.1 app.component.ts
+        3.1.1 ajouter un setTimeOut dans createObject qui passe à l'état removed après 2s
+        3.1.2 remplacer push par unshift
+    3.2 item.component.ts
+        3.2.1 créer deux transitions de void vers n'importe quel état de de m'importe quel état vers void
+        3.2.2 créer méthode changeState
+    3.3 item.component.html
+        3.3.1 ajout ngIF pour masque le div panel si l'état est à removed
+        3.3.2 ajout div avec 2 buttons pour passer un état à l'autre gra^ce à la méthode changeState
+    3.4 item.ts
+        3.4.1 state en public ou setter

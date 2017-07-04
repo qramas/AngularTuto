@@ -1,7 +1,7 @@
 export class Item {
     private reference: string;
     private name: string;
-    public state: number;
+    private state: number;
     public animateState: string; //        2.3.1 déclarer variable animateState
 
     constructor(data: any) {

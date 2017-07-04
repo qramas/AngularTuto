@@ -137,3 +137,11 @@ Chapitre 12 : Exercice.
 Chapitre 13 : Exercice.
     Dans config.ts ajouter une fonction qui return la collection en prenant exemple sur APP_TITLE et APP-VERSION
     puis modifier app.component.ts pour utiliser cette foncton
+
+    13.1 config.ts
+        13.1.1 fonction APP_COLLECTION qui return la collection
+        13.1.2 import de Item
+    13.2 app.component.ts
+        13.2.1 init de  collection dans constructor avec Config.APP_COLLECTION
+
+Chapitre 14 : Les pipes. 

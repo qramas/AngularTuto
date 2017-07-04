@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Item } from 'app/models/item';
-import { Config } from 'app/config';
+import { Item } from './models/item';
+import { Config } from './config';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,11 +11,10 @@ export class AppComponent {
   private version: string;
   private collection: Item[];
 
-
   constructor() {
     this.title = Config.APP_TITLE;
     this.version = Config.APP_VERSION;
-    this.collection = [new Item({ reference: '1234', name: 'Quentin', state: 0 })];
+    this.collection = Config.APP_COLLECTION;//        13.2.1 init de  collection dans constructor avec Config.APP_COLLECTION
   }
   /**
    *  getDetails()

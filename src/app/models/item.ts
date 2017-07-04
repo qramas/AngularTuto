@@ -8,4 +8,7 @@ export class Item {
         this.name = data.name;
         this.state = data.state;
     }
+    public getName(): string {
+        return this.name;
+    }
 }

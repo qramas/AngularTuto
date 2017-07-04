@@ -146,3 +146,9 @@ Chapitre 13 : Exercice.
 
 Chapitre 14 : Les pipes. 
     On va créer un pipe personnalisé pour faire un moteur de recherche sur les propriétés name.
+    Créer un dossier pipes et un fichier item.pipes.ts
+    14.1 app.component.html
+
+    14.2 item.pipe.ts
+
+    14.3 app.module.ts

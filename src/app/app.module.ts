@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ItemComponent } from './item.component';
 import { ItemFormComponent } from './itemform.component';
+import { ItemPipe } from 'app/pipes/item.pipes';
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
-    ItemFormComponent
+    ItemFormComponent,
+    ItemPipe
   ],
   imports: [
     HttpModule,

@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { ItemComponent } from './item.component';
 import { ItemFormComponent } from './itemform.component';
 import { ItemPipe } from 'app/pipes/item.pipes';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; //2.4.1 imports de BrowerAnimationsModule
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,8 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
   imports: [
     HttpModule,
     BrowserModule,
-    FormsModule,
-    BrowserAnimationsModule //2.4.2 déclarer BrowerAnimationsModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

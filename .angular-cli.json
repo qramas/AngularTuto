@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "../bower-components/bootstrap/dist/css/bootstrap.min.css",
+        "../bower_components/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
       "scripts": [],

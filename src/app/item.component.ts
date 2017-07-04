@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Item } from 'app/models/item';
 @Component({
     selector: 'item-component',
@@ -7,9 +7,4 @@ import { Item } from 'app/models/item';
 })
 export class ItemComponent {
     @Input() item: Item;
-    @Output() onGetDetails: EventEmitter<any> = new EventEmitter();
-
-    getDetailsItem(event) {
-        this.onGetDetails.emit(this.item);
-    }
 }

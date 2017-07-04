@@ -14,15 +14,8 @@ export class AppComponent {
   constructor() {
     this.title = Config.APP_TITLE;
     this.version = Config.APP_VERSION;
-    this.collection = Config.APP_COLLECTION;//        13.2.1 init de  collection dans constructor avec Config.APP_COLLECTION
+    this.collection = Config.APP_COLLECTION;
   }
-  /**
-   *  getDetails()
-   */
-  public getDetailsApp(item: Item) {
-    console.log(item)
-  }
-
 
   /**
    * createObject

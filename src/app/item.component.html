@@ -1,4 +1,9 @@
-<p>Référence : {{item.reference}}</p>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span>Référence : {{item.reference}}</span>
+
+    </div>
+</div>
 <p>Nom : {{item.name}}</p>
 <p class="state-0" *ngIf="0==item.state ">A livrer</p>
 <p class="state-1" *ngIf="1==item.state ">En cours de livraison</p>

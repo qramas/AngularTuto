@@ -21,13 +21,11 @@ export class AppComponent {
    * createObject
    */
   public createObject(newItem: Item) {
-    this.collection.unshift(newItem);
-    setTimeout(() => {
+    this.collection.unshift(newItem);//        3.1.2 remplacer push par unshift
+    setTimeout(() => { //        3.1.1 ajouter un setTimeOut dans createObject qui passe à l'état removed après 2s
+
       newItem.animateState = 'removed';
     }, 2000);
-    setTimeout(() => { //4.4.1 Ajout d'un setTimeOut pour passer l'état à removedFromDom après 3s
-      newItem.animateState = 'removedFromDom';
-    }, 3000);
   }
 
 }

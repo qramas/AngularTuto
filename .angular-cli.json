@@ -20,7 +20,8 @@
       "prefix": "app",
       "styles": [
         "../bower_components/bootstrap/dist/css/bootstrap.min.css",
-        "styles.css"
+        "styles.css",
+        "../bower_components/animate.css/animate.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

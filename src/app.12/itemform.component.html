@@ -1,0 +1,8 @@
+<!-->12.2.1 Coller le formulaire.</!-->
+<form #itemform="ngForm">
+    <input [(ngModel)]="newItem.reference" name="reference" required minlength="4" #ref="ngModel">
+    <span [hidden]="ref.valid || ref.pristine"> Champ invalide</span>
+    <input [(ngModel)]=" newItem.name " name="name" required>
+    <input [(ngModel)]="newItem.state " name="state" required>
+    <button [disabled]="!itemform.valid " (click)='createObjectItem($event)'>Create Object</button>
+</form>

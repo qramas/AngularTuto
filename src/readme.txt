@@ -121,13 +121,19 @@ Chapitre 12 : Exercice.
     12.2 itemform.component.html
         12.2.1 Coller le formulaire.
     12.3 itemform.component.ts
-        12.3.1 Création du composant itemformComponent.
+        12.3.1 Création du composant itemformComponent import de Component, Output, event
+                déclaration de @Component.
         12.3.2 Création d'un variable newItem.
         12.3.3 Constructor qui initialise la variable newItem
-        12.3.4 Créer Ouput onCreateObject.
+        12.3.4 Créer un décorateur @Ouput onCreateObject qui prend un EventEmitter.
         12.3.5 créer createObjectItem qui fait un emit et un resetNewItem
         12.3.6 créer resetNewItem.
     12.4 app.component.ts
-        12.4.1 supprimer la gestion du newItem
+        12.4.1 supprimer la gestion du newItem, modifier createObject qui récupère le contenu de l'outputpour faire 
+                un push dans la collection
     12.5 app.module.ts
         12.5.1 Ajouter la déclaration du nouveau composant.
+
+Chapitre 13 : Exercice.
+    Dans config.ts ajouter une fonction qui return la collection en prenant exemple sur APP_TITLE et APP-VERSION
+    puis modifier app.component.ts pour utiliser cette foncton

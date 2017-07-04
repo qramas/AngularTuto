@@ -145,3 +145,4 @@ Chapitre 13 : Exercice.
         13.2.1 init de  collection dans constructor avec Config.APP_COLLECTION
 
 Chapitre 14 : Les pipes. 
+    On va créer un pipe personnalisé pour faire un moteur de recherche sur les propriétés name.

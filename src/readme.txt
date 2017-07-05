@@ -40,4 +40,5 @@ Chapitre 1 : Création de module avec un component
     1.13 item.ts
         1.13.1 supprimer methode toggleAnimateState
 
-Chapitre 2 :
+Chapitre 2 : implémentation de ngOnInit pour les composants
+

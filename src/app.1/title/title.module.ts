@@ -7,7 +7,7 @@ import { TitleComponent } from './title.component';
     CommonModule
   ],
   exports:[
-    TitleComponent 
+    TitleComponent //1.3.1 ajouter export pour TitleComponent
   ],
   declarations: [TitleComponent]
 })

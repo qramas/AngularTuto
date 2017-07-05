@@ -1,10 +1,8 @@
-<!-->4.3.1 supprimer ref au trigger dans div panel
-        4.3.2 ajouter la classe animated au div class panel
-        4.3.3 Modif du *ngIF avec nouvel état pour la suppression du dom
-        4.3.4 Ajout directive ngClass pour allouer la classe rubberBand ou fadeOut en fonction de l'état.
+<!-->
+1.11.1 supprimer ngIF sur panel 1.11.2 supprimer deuxième class fadeOut dans [ngClass] 1.11.3 supprimer click toggleAnimateState
+dans div class panel
 </!-->
-<div *ngIf="item.animateState !== 'removedFromDom'" class="panel panel-default animated" (click)='item.toggleAnimateState()'
-    [ngClass]="{'rubberBand':item.animateState !== 'removed', 'fadeOut':item.animateState==='removed'}">
+<div class="panel panel-default animated" [ngClass]="{'rubberBand':item.animateState !== 'removed'}">
     <div class="panel-heading">
         <span>Référence : {{item.reference}}</span>
         <span class="state-0 pull-right" *ngIf="0==item.state ">A livrer</span>

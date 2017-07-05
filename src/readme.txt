@@ -28,4 +28,16 @@ Chapitre 1 : Création de module avec un component
         1.9.2 import de OnInit
         1.9.3 implémentation interface ngOnInit
         1.9.4 init variable dans ngOnInit
-    
+    1.10 app.module.ts
+        1.10.1 import de Config
+        1.10.2 ajout de Config dans providers.
+    1.11 item.component.html
+        1.11.1 supprimer ngIF sur panel
+        1.11.2 supprimer deuxième class fadeOut dans [ngClass]
+        1.11.3 supprimer click toggleAnimateState dans div class panel
+    1.12 app.component.ts
+        1.12.1 supprimer les setTimeOut dans createObject
+    1.13 item.ts
+        1.13.1 supprimer methode toggleAnimateState
+
+Chapitre 2 :

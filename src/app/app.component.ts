@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; //        1.9.2 import de OnInit
 import { Item } from './models/item';
 import { Config } from './config';
 @Component({
@@ -6,17 +6,17 @@ import { Config } from './config';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  private title: string;
+export class AppComponent implements OnInit {//1.9.1 implémente OnInit
+
   private version: string;
   private collection: Item[];
 
   constructor() {
-    this.title = Config.APP_TITLE;
-    this.version = Config.APP_VERSION;
-    this.collection = Config.APP_COLLECTION;
   }
 
+  ngOnInit(): void { //        1.9.3 implémentation interface ngOnInit
+    this.collection = Config.APP_COLLECTION;//        1.9.4 init variable dans ngOnInit
+  }
   /**
    * createObject
    */
@@ -25,7 +25,7 @@ export class AppComponent {
     setTimeout(() => {
       newItem.animateState = 'removed';
     }, 2000);
-    setTimeout(() => { //4.4.1 Ajout d'un setTimeOut pour passer l'état à removedFromDom après 3s
+    setTimeout(() => {
       newItem.animateState = 'removedFromDom';
     }, 3000);
   }

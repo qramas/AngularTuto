@@ -1,13 +1,9 @@
-<h1>
-  {{title}}
-</h1>
-<p>
-  {{version}}
-</p>
+<!-->1.6.1 AJouter le selecteur
+<app-title> pour afficher le contenu template de title.component 1.6.2 supprimer la version</!-->
+  <app-title></app-title>
+  Filtrer la liste : <input #listPipe (keyup)="0">
+  <itemform-component (onCreateObject)="createObject($event)"></itemform-component>
 
-Filtrer la liste : <input #listPipe (keyup)="0">
-<itemform-component (onCreateObject)="createObject($event)"></itemform-component>
-
-<div *ngFor="let item of collection | itemPipe:listPipe.value">
-  <item-component [item]="item" (onGetDetails)="getDetailsApp($event)"></item-component>
-</div>
+  <div *ngFor="let item of collection | itemPipe:listPipe.value">
+    <item-component [item]="item" (onGetDetails)="getDetailsApp($event)"></item-component>
+  </div>

@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { ItemComponent } from './item.component';
 import { ItemFormComponent } from './itemform.component';
 import { ItemPipe } from 'app/pipes/item.pipes';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; //2.4.1 imports de BrowerAnimationsModule
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TitleModule } from "app/title/title.module";   
+import { Config } from "app/config";
+        //1.4.2 importé TitleModule
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
     HttpModule,
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule //2.4.2 déclarer BrowerAnimationsModule
+    BrowserAnimationsModule,
+    TitleModule //1.4.1 declaration de TitleModule
   ],
-  providers: [],
+  providers: [Config],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

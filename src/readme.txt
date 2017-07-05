@@ -41,4 +41,16 @@ Chapitre 1 : Création de module avec un component
         1.13.1 supprimer methode toggleAnimateState
 
 Chapitre 2 : implémentation de ngOnInit pour les composants
+    2.1 itemform.component.ts 
+        2.1.1 implements OnInit
+        2.1.2 import OnInit
+        2.1.3 implementer interface ngOnInit
+        2.1.4 this.resetNewItem dans ngOnInit au lieu de constructor
+    2.2 item.component.ts
+        2.2.1 implements OnInit
+        2.2.2 import OnInit
+        2.2.3 implementer interface ngOnInit
+        2.2.4 ajouter constructor
 
+Chapitre 3 : Directives
+    

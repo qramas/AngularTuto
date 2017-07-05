@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'; 
+import { Component, Input, OnInit } from '@angular/core'; //        2.2.2 import OnInit
 import { Item } from 'app/models/item';
 
 @Component({
@@ -6,9 +6,9 @@ import { Item } from 'app/models/item';
     templateUrl: './item.component.html',
     styleUrls: ['./item.component.css']
 })
-export class ItemComponent implements OnInit {
-    constructor() { }
-    ngOnInit(): void {
+export class ItemComponent implements OnInit {//      2.2.1 implements OnInit
+    constructor() { }//2.2.4 ajouter constructor
+    ngOnInit(): void {//2.2.3 implementer interface ngOnInit
 
     }
     @Input() item: Item;

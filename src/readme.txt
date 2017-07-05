@@ -66,3 +66,24 @@ Chapitre 3 : Directives
         3.3.1 utilisation directive appHighlight sur un span
 
 Chapitre 4 : Créer un service pour la collection
+    on veut créer un service qui gère la collection et que l'on va pouvoir utiliser
+    dans tous nos componsants par injection de dépendance. Avantage, tous aux mêmes endroits et modifs
+    à un seul endroits.
+    ng generate service services/item
+    4.1 item.service.ts
+        4.1.1 impot de item
+        4.1.2 declaration variable newItem
+        4.1.3 constructor avec appel de resetNewItem
+        4.1.4 declaration collection en public
+        4.1.5 fonction add
+        4.1.6 fonction resetNewItem
+    4.2 app.module.ts
+        4.2.1 declaration ItemService dans les providers.
+        4.2.2 import de ItemService
+    4.3 app.component.ts
+        4.3.1 import de ItemService
+        4.3.2 injection ItemService dans constructor
+        4.3.3 dans ngOnInit on initialise collection depuis ItemService
+        4.3.4 dans create object on utilise add de ItemService
+
+Chapitre 5 : Routing

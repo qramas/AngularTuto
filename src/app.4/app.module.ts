@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TitleModule } from "app/title/title.module";
 import { Config } from "app/config";
 import { HighlightDirective } from './directives/highlight.directive';
-import { ItemService } from "app/services/item.service";
+import { ItemService } from "app/services/item.service"; // 4.2.2 import de ItemService
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { ItemService } from "app/services/item.service";
     BrowserAnimationsModule,
     TitleModule
   ],
-  providers: [Config, ItemService],
+  providers: [Config, ItemService], //4.2.1 declaration ItemService dans les providers.
   bootstrap: [AppComponent]
 })
 export class AppModule { }

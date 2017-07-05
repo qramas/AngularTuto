@@ -1,0 +1,20 @@
+<div class="panel panel-default animated" [ngClass]="{'rubberBand':item.animateState !== 'removed'}">
+    <div class="panel-heading">
+        <span>Référence : {{item.reference}}</span>
+        <span class="state-0 pull-right" *ngIf="0==item.state ">A livrer</span>
+        <span class="state-1 pull-right" *ngIf="1==item.state ">En cours de livraison</span>
+        <span class="state-2 pull-right" *ngIf="2==item.state ">Livrée</span>
+    </div>
+    <div class="panel-body">
+        <p>Nom : <span appHighlight>{{item.name|uppercase}}</span></p>
+        <div *ngIf="2!=item.state">
+            Changer le status :
+            <button (click)="changeState($event, 1)" class="btn btn-primary" *ngIf="1!==item.state">
+                En cours de livraison
+            </button>
+            <button (click)="changeState($event, 2)" class="btn btn-primary">
+                Livrée
+            </button>
+        </div>
+    </div>
+</div>

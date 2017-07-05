@@ -1,4 +1,3 @@
-christophegueroult@gmail.com : envoyer mail fin formation pour recevoir ebook. Centre de formation si intéressé le dire.
 Chapitre 1 : Constructor et typage.
     1.1 : app.component.ts : title -> private + typage et ajout d'une variable version private. 
 

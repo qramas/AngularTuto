@@ -6,6 +6,7 @@
         <span class="state-2 pull-right" *ngIf="2==item.state ">Livrée</span>
     </div>
     <div class="panel-body">
+        <!-->3.3.1 utilisation directive appHighlight sur un span</!-->
         <p>Nom : <span appHighlight>{{item.name|uppercase}}</span></p>
         <div *ngIf="2!=item.state">
             Changer le status :

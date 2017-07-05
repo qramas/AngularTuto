@@ -1,0 +1,7 @@
+<app-title></app-title>
+Filtrer la liste : <input #listPipe (keyup)="0">
+<itemform-component (onCreateObject)="createObject($event)"></itemform-component>
+
+<div *ngFor="let item of collection | itemPipe:listPipe.value">
+  <item-component [item]="item" (onGetDetails)="getDetailsApp($event)"></item-component>
+</div>

@@ -53,4 +53,16 @@ Chapitre 2 : implémentation de ngOnInit pour les composants
         2.2.4 ajouter constructor
 
 Chapitre 3 : Directives
-    
+    les Directives permettent de donner des ordres, le plus souvent des  ordres structurés
+    (*ngIFn, *ngFor...) mais on trouve aussi des Directives d'attributs et d'affichage 
+    ([ngClass], [hidden], ...)
+    création d'un dossier directives.
+    ng g directive directives/highlight
+    3.1 app.module.ts
+        3.1.1 check si la génération a fait les  imports correctement.
+    3.2 highlight.directive.ts
+        3.2.1 injection ElementRef et Renderer2 dans le constructor
+    3.3 item.composant.html
+        3.3.1 utilisation directive appHighlight sur un span
+
+Chapitre 4 : Créer un service pour la collection
